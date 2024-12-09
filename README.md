@@ -1,3 +1,3 @@
 # react 课程学习
 
-react学习联系的项目
+react 学习练习的项目
