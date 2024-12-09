@@ -1,0 +1,59 @@
+<!--pages/home/detail/detail.wxml-->
+
+<text class="title">电影列表页面：</text>
+<view class="page__bd">
+  <view class="weui-panel weui-panel_access">
+    <view
+      class="weui-panel__bd"
+      wx:for="{{movies}}"
+      wx:for-item="movies"
+      wx:key="*item"
+    >
+      <navigator
+        url="../../home/movieDetail/movieDetail?id={{index}}&name={{movies.name}}&img={{movies.img}}&desc={{movies.desc}}"
+        class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active"
+      >
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image
+            class="weui-media-box__thumb"
+            mode="widthFix"
+            src="{{movies.img}}"
+            sytle="height:auto"
+          ></image>
+        </view>
+
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{movies.name}}</view>
+          <view class="weui-media-box__desc">{{movies.desc}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<!-- 组件携带数据dataset -->
+<image
+  id="imageclick"
+  src="https://img13.360buyimg.com/n7/jfs/t1/842/9/3723/77573/5b997bedE4f438e5b/ccd1077b985c7150.jpg" mode="widthFix"
+  style="width:200rpx"
+  bindtap="clickImage"
+></image>
+
+<!-- 自定义属性dataset -->
+<view
+  id="viewclick"
+  style="background-color: red;padding:20px;" data-sku="100000177760"
+  data-spu="100000177756"
+  data-pid="100000177756"
+  data-toggle="Apple iPhone XR"
+  data-jd-color="Red"
+  data-productBrand="Apple"
+  bindtap="clickView"
+>
+  <image
+    id="imageclick"
+    src="https://img13.360buyimg.com/n7/jfs/t1/842/9/3723/77573/5b997bedE4f438e5b/ccd1077b985c7150.jpg" mode="widthFix"
+    style="width:200rpx"
+    bindtap="clickImage"
+  >点击button</image>
+</view>

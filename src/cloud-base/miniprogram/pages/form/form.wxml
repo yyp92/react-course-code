@@ -1,0 +1,159 @@
+<!--pages/form/form.wxml-->
+
+<!-- button调用API -->
+<!-- <button type="primary" bindtap="buttonSetTitle">设置标题</button> -->
+
+
+<!-- 使用表单修改标题 -->
+<!-- <form bindsubmit="setNaivgationBarTitle">
+  <input type="text" placeholder="请输入页面标题并点击设置即可" name="navtitle"></input> 
+  <button type="primary" formType="submit">设置</button>
+</form> -->
+
+
+<!-- 文本输入框input  -->
+<!-- <form bindsubmit="inputSubmit">
+  <input type="text" name="username" placeholder="请输入你的用户名"></input>
+  <input password type="text" name="password" maxlength="6" placeholder="请输入6位数密码"  confirm-type="next" />
+  <input type="idcard" name="idcard" placeholder="请输入你的身份证账号" />
+  <input type="number" name="age" placeholder="请输入你的年龄" />
+  <input type="digit" name="height" placeholder="请输入你身高多少米"/>
+  <button form-type="submit">提交</button>
+</form> -->
+
+
+<!-- 添加手机联系人 -->
+<!-- <form bindsubmit="submitContact">
+  <view>姓氏</view>
+  <input name="lastName" />
+
+  <view>名字</view>
+  <input name="firstName" />
+
+  <view>手机号</view>
+  <input name="mobilePhoneNumbe" />
+
+  <view>微信号</view>
+  <input name="weChatNumber" />
+
+  <button type="primary" form-type="submit">创建联系人</button>
+  <button type="default" form-type="reset">重置</button>
+</form> -->
+
+
+<!-- input绑定事件处理函数 -->
+<!-- <view>你输入的是：{{inputValue}}</view>
+<input bindinput="bindKeyInput" placeholder="输入的内容会同步到view中"/> -->
+
+
+<!-- 剪贴板 -->
+<!-- <input type="text" name="copytext" value="{{initvalue}}" bindinput="valueChanged"></input>
+<input type="text" value="{{pasted}}"></input>
+<button type="primary" bindtap="copyText">复制</button>
+<button bindtap="pasteText">粘贴</button> -->
+
+<!-- 表单组件的综合案例 -->
+<!-- <form bindsubmit="formSubmit" bindreset="formReset">
+  <view>开关选择器按钮</view>
+  <switch name="switch1"/>
+
+  <view>滑动选择器按钮slider</view>
+  <slider name="process" show-value ></slider>
+
+  <view>文本输入框</view>
+  <input name="textinput" placeholder="要输入的文本" />
+
+  <view>单选按钮radio</view>
+  <radio-group name="sex">
+    <label><radio value="male"/>男</label>
+    <label><radio value="female"/>女</label>
+  </radio-group>
+
+  <view>多选按钮checkbox</view>
+  <checkbox-group name="gamecheck">
+    <label><checkbox value="game1"/>王者荣耀</label>
+    <label><checkbox value="game2"/>欢乐斗地主</label>
+    <label><checkbox value="game3"/>连连看</label>
+    <label><checkbox value="game4"/>刺激战场</label>
+    <label><checkbox value="game5"/>穿越火线</label>
+    <label><checkbox value="game6"/>天天酷跑</label>
+  </checkbox-group>
+
+  <button form-type="submit">提交</button>
+  <button form-type="reset">重置</button>
+</form> -->
+
+<!-- <form>
+  <input name="name" placeholder="请输入你的姓名" value="{{userData.name}}" />
+  <textarea name="desc" value="{{userData.desc}}" placeholder="请简短介绍一下你自己" auto-height auto-focus />
+  <input name="email" value="{{userData.email}}" placeholder="请输入你的邮箱" />
+</form> -->
+
+
+<!-- slider响应设置颜色 -->
+<!-- <view style="background-color:rgb({{R}},{{G}},{{B}});width:300rpx;height:300rpx"></view>
+<slider data-color="R" value='{{R}}' max="255" bindchanging='colorChanging'  show-value>红色</slider>
+<slider data-color="G" value='{{G}}' max="255" bindchanging='colorChanging' show-value>绿色</slider>
+<slider data-color="B" value='{{B}}' max="255" bindchanging='colorChanging' show-value>蓝色</slider> -->
+
+
+<!-- 
+  获取picker组件的数据
+
+  mode属性：滚动选择器有几种模式，不同的模式可以弹出不同类型的滚动选择器，这里的是date日期选择，其他模式大体相似；
+  start和end属性：这是日期选择器特有的属性，为有效日期的开始和结束，我们可以滚动试下，超出这个范围就没法滚动了；
+ -->
+<!-- <picker mode="date" value="{{pickerdate}}" start="2017-09-01" end="2022-09-01" bindchange="bindDateChange">
+选择的日期为：{{pickerdate}}
+</picker> -->
+
+
+<!-- picker组件的渲染 -->
+<!-- <picker name="birth" mode="date" value="{{userData.birth}}" start="1970-01-01" end="2005-01-01" bindchange="birthChange">
+  <view>你的生日：{{userData.birth}}</view>
+</picker>
+
+<picker name="region" mode="region" bindchange="regionChange" value="{{userData.region}}" custom-item="{{customItem}}">
+  <view class="picker">
+    当前选择：{{userData.region[0]}}，{{userData.region[1]}}，{{userData.region[2]}}
+  </view>
+</picker> -->
+
+
+
+<!-- 表单的渲染 -->
+<input name="name" placeholder="请输入你的姓名" value="{{userData.name}}" />
+
+<textarea name="desc" placeholder="请简短介绍一下你自己" value="{{userData.desc}}" auto-height auto-focus />
+
+<input name="email" placeholder="请输入你的邮箱" value="{{userData.email}}"/>
+
+<slider name="process" show-value value="{{userData.process}}"></slider>
+
+<switch name="message" checked="{{userData.message}}" />
+
+<radio-group name="marriage">
+  <label><radio value="1" checked="{{userData.marriage==1}}" />单身</label>
+  <label><radio value="2" checked="{{userData.marriage==2}}" />未婚</label>
+  <label><radio value="3" checked="{{userData.marriage==3}}" />已婚</label>
+</radio-group>
+
+<wxs module="check">
+  var getBoolean = function(array, value) {
+    if (array.indexOf(value) === -1) {
+      return false
+    }
+    else {
+      return true
+    }
+  }
+  module.exports.getBoolean = getBoolean
+</wxs>
+<checkbox-group name="talks" >
+  <label><checkbox value="talk1" checked="{{check.getBoolean(userData.talks,'talk1')}}" />前端</label>
+  <label><checkbox value="talk2" checked="{{check.getBoolean(userData.talks,'talk2')}}" />后端</label>
+  <label><checkbox value="talk3" checked="{{check.getBoolean(userData.talks,'talk3')}}" />开发工具</label>
+  <label><checkbox value="talk4" checked="{{check.getBoolean(userData.talks,'talk4')}}" />小程序</label>
+  <label><checkbox value="talk5" checked="{{check.getBoolean(userData.talks,'talk5')}}" />iOS</label>
+  <label><checkbox value="talk6" checked="{{check.getBoolean(userData.talks,'talk6')}}" />安卓</label>
+</checkbox-group>

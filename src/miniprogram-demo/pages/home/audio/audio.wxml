@@ -1,0 +1,10 @@
+<!--pages/home/audio/audio.wxml-->
+
+<!-- 此组件已经不在维护了，了解即可 -->
+<audio
+  src="{{musicinfo.src}}"
+  poster="{{musicinfo.poster}}"
+  name="{{musicinfo.name}}"
+  author="{{musicinfo.author}}"
+  controls
+></audio>

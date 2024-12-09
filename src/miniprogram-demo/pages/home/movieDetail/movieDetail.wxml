@@ -1,0 +1,6 @@
+<!--pages/home/movieDetail/movieDetail.wxml-->
+
+<image mode="widthFix" src="{{detail.img}}" sytle="height:auto"></image>
+<view>{{detail.name}}</view>
+<view>{{detail.desc}}</view>
+<view>{{detail.id}}</view>

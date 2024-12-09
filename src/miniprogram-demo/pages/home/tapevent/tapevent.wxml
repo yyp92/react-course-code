@@ -1,0 +1,28 @@
+<!--pages/home/tapevent/tapevent.wxml-->
+
+<!-- 页面滚动 -->
+<!-- <button type="primary" bindtap="scrollToPosition">滚动到页面指定位置</button>
+<view class="pagetop" style="background-color:#333; width:100%; height:400px"></view>
+<button type="primary" bindtap="scrollToTop">滚动到页面顶部（返回顶部）</button>
+<view id="pageblock" style="background-color:#333; width:100%; height:400px"></view> -->
+
+<!-- 消息提示框Toast -->
+<button style="margin-top: 10px;" type="primary" bindtap="toastTap">点击弹出消息对话框</button>
+
+<!-- 模态对话框 -->
+<!-- 点击按钮弹出模态对话框 -->
+<button style="margin-top: 10px;"  type="primary" bindtap="modalTap">显示模态对话框</button>
+
+<!-- 手机振动 -->
+<button style="margin-top: 10px;"  type="primary" bindtap="vibrateLong">长振动</button>
+
+<!-- 弹出菜单技术文档 -->
+<button style="margin-top: 10px;" type="default" bindtap="actionSheetTap">弹出操作菜单</button>
+
+<!-- 跳转到新页面与Tab页-->
+<button style="margin-top: 10px;" bindtap="navigateTo">保留页面并跳转</button>
+<button style="margin-top: 10px;" bindtap="switchTab">跳转到组件Tab页</button>
+<button style="margin-top: 10px;" bindtap="redirectTo">关闭当前页面跳转</button>
+
+<!-- 返回上一页 -->
+<button style="margin-top: 10px;" bindtap="navigateBack">返回上一页</button>

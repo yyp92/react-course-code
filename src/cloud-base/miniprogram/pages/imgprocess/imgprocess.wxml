@@ -1,0 +1,3 @@
+<!--pages/imgprocess/imgprocess.wxml-->
+
+<button type="primary" bindtap="imgProcess">处理图片</button>

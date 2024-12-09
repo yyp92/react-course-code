@@ -1,0 +1,7 @@
+<!--pages/apidata/apidata.wxml-->
+
+<button bindtap="getHistoryToday">历史的今天</button>
+
+<button style="margin-top: 10px;" bindtap="getTodayWeather">获取和风天气-此刻的天气</button>
+
+<button style="margin-top: 10px;" bindtap="getLocation">腾讯地图LBS</button>

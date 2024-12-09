@@ -1,0 +1,4 @@
+<!--pages/record/record.wxml-->
+
+<button type="primary" bindtap="startRecord">开始录音</button>
+<button style="margin-top: 10px;" type="primary" bindtap="playRecord">播放录音</button>

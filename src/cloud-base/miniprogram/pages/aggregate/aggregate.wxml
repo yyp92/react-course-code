@@ -1,0 +1,17 @@
+<!--pages/aggregate/aggregate.wxml-->
+
+<button bindtap="handleMatch">match匹配</button>
+
+<button style="margin-top: 15px;" bindtap="handleProject">project投射</button>
+
+<button style="margin-top: 15px;" bindtap="handleGroup">group分组</button>
+
+<button style="margin-top: 15px;" bindtap="handleCount">count计算</button>
+
+<button style="margin-top: 15px;" bindtap="handleUnwind">unwind拆分数组</button>
+
+<button style="margin-top: 15px;" bindtap="handleReplaceRoot">replaceRoot指定根节点</button>
+
+<button style="margin-top: 15px;" bindtap="handleSort">简单的排名案例</button>
+
+

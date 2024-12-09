@@ -1,0 +1,109 @@
+<!--pages/home/home.wxml-->
+<!-- <import src="/pages/common/head.wxml" />
+<import src="/pages/common/footer.wxml" /> -->
+
+<!-- 头部模板 -->
+<!-- <template is="header" data="{{...headData}}" /> -->
+
+<!-- navigator 组件 -->
+<view class="index-link">
+  <navigator url="./../home/layout/layout" class="item-link">layout 布局</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/imgshow/imgshow" class="item-link">让小程序显示图片</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/gradient/gradient" class="item-link">gradient</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/filter/filter" class="item-link">filter</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/transform/transform" class="item-link">transform</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/transition/transition" class="item-link">transition 和 animation</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/movie/movie" class="item-link">movie</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/list/list" class="item-link">列表渲染</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/condition/condition" class="item-link">条件渲染</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/swiper/swiper" class="item-link">swiper 轮播</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/audio/audio" class="item-link">audio 音频</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/video/video" class="item-link">video 视频</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/map/map" class="item-link">map 地图</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/user/user" class="item-link">获取用户信息</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/tapevent/tapevent" class="item-link">点击事件</navigator>
+</view>
+
+<view class="index-link">
+  <navigator url="./../home/data/data" class="item-link">页面渲染</navigator>
+</view>
+
+<view class="index-link">
+  <navigator
+    id="detailshow"
+    url="./../home/detail/detail?id=lesson&uid=tcb&key=tap&ENV=weapp&frompage=lifecycle"
+    class="item-link"
+  >携带数据与跨页面渲染</navigator>
+</view>
+
+
+
+<!-- navigator 组件包裹图片链接 -->
+<!-- <view class="event-list">
+  <navigator
+    url="/pages/home/imgshow/imgshow"
+    class="event-link"
+  >        
+    <view class="event-img">
+      <image
+        mode="widthFix"
+        src="https://hackwork.oss-cn-shanghai.aliyuncs.com/lesson/weapp/4/weapp.jpg"
+      ></image>
+    </view>
+    <view class="event-content">
+      <view class="event-title">零基础学会小程序开发</view>
+      <view class="event-desc">通过两天集中的学习，你会循序渐进的开发出一些具有实际应用场景的小程序。 </view>
+      <view class="event-box">
+        <view class="event-address">深圳南山</view>
+        <view class="event-time">2018年9月22日-23日</view>
+      </view>
+    </view>
+  </navigator>
+</view> -->
+
+<!-- <template is="footer" /> -->
+
+<!-- 小程序客服 -->
+<!-- <button open-type="contact">小程序客服</button> -->

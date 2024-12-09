@@ -1,0 +1,16 @@
+<!--pages/music/music.wxml-->
+
+<view>当前播放位置：{{currentTime}}</view>
+<view>音乐总时长：{{duration}}</view>
+
+<!-- 在music.wxml添加progress组件 -->
+<progress percent="{{progress}}" show-info stroke-width="3"/>
+
+<button class="button" type="primary" bindtap="audioPlay">播放</button>
+
+<button class="button" type="primary" bindtap="audioPause">暂停</button>
+
+<button class="button" type="primary" bindtap="audioSeek">跳转到指定时间</button>
+
+<button class="button" type="primary" bindtap="audioStart">重新播放</button>
+

@@ -1,0 +1,52 @@
+<!--pages/folder/folder.wxml-->
+
+<!-- <mp-toptips msg="组件引入成功，提示5秒后消失" type="error" show="true" delay="5000"></mp-toptips>
+<mp-dialog title="WeUI引入成功" show="true" bindbuttontap="" buttons="{{[{text: '确定'}]}}">
+  <view>看得到这个界面说明WeUI拓展引入成功</view>
+</mp-dialog> -->
+
+
+<!-- <view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">相册/文件夹的渲染</text>
+
+  <button style="margin-top: 10px;" bindtap= "addFile">添加数据</button> 
+
+  <block wx:for="{{userData[0].folders}}" wx:for-item="folder" wx:key="item">
+      <view>文件名：{{folder.folderName}}</view>
+      <view>文件夹内文件数量：{{folder.files.length}}</view>
+  </block>
+</view> -->
+
+<button bindtap="showDialog">新建文件夹</button>
+<mp-dialog
+  title="新建文件夹"
+  show="{{dialogShow}}"
+  bindbuttontap="createFolder"
+  buttons="{{buttons}}"
+>
+  <input
+    name="name"
+    placeholder='请输入文件夹名'
+    auto-focus
+    value='{{inputValue}}'
+    bindinput='keyInput'
+  ></input>
+</mp-dialog>
+
+<block
+  wx:for="{{userData[0].folders}}"
+  wx:for-index="idx"
+  wx:for-item="folder"
+  wx:key="item"
+>
+    <mp-cell
+      link
+      hover
+      url="/pages/file/file?index={{idx}}"
+      value="{{folder.folderName}}"
+      footer="{{folder.files.length}}"
+    >
+    </mp-cell>
+</block>

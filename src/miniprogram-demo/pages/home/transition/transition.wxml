@@ -1,0 +1,23 @@
+<!--pages/home/transition/transition.wxml-->
+
+<view>
+  <text class="title">transition</text>
+
+  <view class="transition-display">
+    <view class="box bg-color" hover-class="bg-color-hover"></view>
+  </view>
+
+  <view>
+    <text>盒子的多个属性一起动画: width, height, background-color, transform. 将鼠标或手指悬停在盒子上查看动画之后放开。</text>
+    <view class="animatebox" hover-class="animatebox-hover"></view>
+  </view>
+</view>
+
+<view>
+  <text class="title">animation</text>
+  <view class="fadeIn">
+    <view>注意会有一个无限颜色渐变变化的动画</view>
+    <image mode="widthFix" src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/weapp.jpg" ></image>
+  </view>
+</view>
+

@@ -1,0 +1,12 @@
+<!--pages/aggregate-operator/aggregate-operator.wxml-->
+
+<button bindtap="handleInit">算术操作符与整列处理</button>
+
+<button style="margin-top: 15px;" bindtap="handleSumOrAvg">求总和与平均值</button>
+
+<button style="margin-top: 15px;" bindtap="handleMaxOrMin">查询分组里面的最大值和最小值</button>
+
+<button style="margin-top: 15px;" bindtap="handleSort">按条件排序后取第一个值和最后一个值</button>
+
+<button style="margin-top: 15px;" bindtap="handleUnwind">将整列字段值组成一个数组</button>
+

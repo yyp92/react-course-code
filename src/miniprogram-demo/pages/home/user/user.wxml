@@ -1,0 +1,9 @@
+<!--pages/home/uesr/uesr.wxml-->
+
+<button open-type="getUserInfo">弹出授权弹窗</button>
+
+<button style="margin-top: 20px;" open-type="getUserInfo" bindgetuserinfo="getUserInfomation"> 点击获取用户信息 </button>
+
+<view>{{userInfo.nickName}}</view>
+<view>{{userInfo.country}}</view>
+<image mode="widthFix" style="width:64px;height:64px" src="{{userInfo.avatarUrl}}"></image>

@@ -1,0 +1,28 @@
+<!--pages/cloudFile/cloudFile.wxml-->
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">上传文件到云存储的案例</text>
+
+  <button bindtap="chooseImg">选择并上传图片</button>
+  <image mode="widthFix" src="{{imgurl}}"></image>
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">下载和删除云存储里的文件</text>
+
+  <button bindtap="downloadFile">下载</button>
+  <button style="margin-top: 10px;" bindtap= "deleteFile">删除</button>
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">云函数上传图片到云存储</text>
+
+  <button bindtap = "handleCloudUploadFile">云函数上传图片</button>
+  <!-- <button style="margin-top: 10px;" bindtap= "deleteFile">删除</button> -->
+</view>
+

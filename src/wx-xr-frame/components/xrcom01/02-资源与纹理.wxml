@@ -1,0 +1,19 @@
+<xr-scene>
+	<xr-assets bind:progress="handleAssetsProgress" bind:loaded="handleAssetsLoad">
+		<xr-asset-load 
+			type="texture"
+			asset-id="texture1"
+			src="https://mmbizwxaminiprogram-1258344707.cos.ap-guangzhou.myqcloud.com/xr-frame/demo/waifu.png"
+		 />
+	</xr-assets>
+	<xr-light type="ambient" color="1 1 1" intensity="1"></xr-light>
+	<xr-light type="directional" intensity="3"  rotation="40 70 0" cast-shadow></xr-light>
+	<xr-mesh 
+		node-id="cube" 
+		geometry="cube" 
+		cast-shadow  
+		uniforms="u_baseColorMap:texture1"
+	/>
+	<xr-mesh geometry="plane" position="0 -1 0" scale="4 1 4" receive-shadow></xr-mesh>
+	<xr-camera clear-color="0.4 0.8 0.6 1"  position="0 1 4" target="cube" camera-orbit-control />
+</xr-scene>

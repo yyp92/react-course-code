@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/functions/functions",
+    "pages/rectangle/rectangle",
+    "pages/invoke/invoke",
+    "pages/dbtest/dbtest",
+    "pages/chinadata/chinadata",
+    "pages/daily/daily",
+    "pages/zhihudaily/zhihudaily",
+    "pages/userHobby/userHobby",
+    "pages/aggregate/aggregate",
+    "pages/aggregate-operator/aggregate-operator",
+    "pages/file/file",
+    "pages/cloudFile/cloudFile",
+    "pages/folder/folder",
+    "pages/user/user",
+    "pages/request/request",
+    "pages/story/story",
+    "pages/apidata/apidata",
+    "pages/blog/blog",
+    "pages/content/content",
+    "pages/form/form",
+    "pages/quiz/quiz",
+    "pages/music/music",
+    "pages/record/record",
+    "pages/video/video",
+    "pages/canvas/canvas",
+    "pages/animate/animate",
+    "pages/chart/chart",
+    "pages/image/image",
+    "pages/tcb-router/tcb-router",
+    "pages/snapshot/snapshot",
+    "pages/imgprocess/imgprocess"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  },
+  "requiredBackgroundModes": ["audio", "location"]
+}

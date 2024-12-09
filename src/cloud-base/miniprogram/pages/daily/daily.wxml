@@ -1,0 +1,3 @@
+<!--pages/daily/daily.wxml-->
+
+<button bindtap="addDaily">新增日报数据</button>

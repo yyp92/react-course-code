@@ -1,0 +1,14 @@
+/* pages/home/home.wxss */
+
+page {
+  background-image: url(https://tcb-1251009918.cos.ap-guangzhou.myqcloud.com/background.jpg);
+  padding-bottom: 10px;
+}
+
+.item-link {
+  margin: 20px;
+  padding:10px 15px;
+  background-color: #4ea6ec;
+  color: #fff;
+  border-radius: 4px;
+}

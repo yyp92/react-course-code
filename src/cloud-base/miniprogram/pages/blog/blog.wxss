@@ -1,0 +1,9 @@
+/* pages/blog/blog.wxss */
+
+.blog-item {
+  margin-top: 24px;
+}
+
+.blog-item:first-child {
+  margin-top: 0;
+}

@@ -1,0 +1,16 @@
+<!--pages/functions/functions.wxml-->
+
+<view>"云开发技术训练营"第5个字符 {{result.charat}}</view>
+<view>两个字符串连接后的结果：{{result.concat}}</view>
+<view>CloudBase Camp字母大写：{{result.uppercase}}</view>
+<view>b的绝对值：{{result.abs}}</view>
+<view>x的y次幂：{{result.pow}}</view>
+<view>返回a是正还是负：{{result.sign}}</view>
+<view>now对象：{{result.now}}</view>
+<view>{{result.fullyear}}年</view>
+<view>{{result.date}}日</view>
+<view>星期{{result.day}}</view>
+<view>{{result.hours}}时</view>
+<view>{{result.minutes}}分</view>
+<view>{{result.seconds}}秒</view>
+<view>1970年1月1日至今的毫秒数：{{result.time}}</view>

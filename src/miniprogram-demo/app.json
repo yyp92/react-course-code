@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/home/layout/layout",
+    "pages/home/imgshow/imgshow",
+    "pages/home/gradient/gradient",
+    "pages/home/filter/filter",
+    "pages/home/transform/transform",
+    "pages/home/transition/transition",
+    "pages/home/movie/movie",
+    "pages/home/list/list",
+    "pages/home/condition/condition",
+    "pages/home/swiper/swiper",
+    "pages/home/audio/audio",
+    "pages/home/video/video",
+    "pages/home/map/map",
+    "pages/home/user/user",
+    "pages/home/tapevent/tapevent",
+    "pages/home/data/data",
+    "pages/home/detail/detail",
+    "pages/home/movieDetail/movieDetail",
+
+    "pages/list/list",
+    "pages/partner/partner",
+    "pages/more/more"
+  ],
+  "window": {
+    "navigationBarTitleText": "云开发技术训练营"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#13227a",
+    "backgroundColor": "#ffffff",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "iconPath": "image/icon-tab1.png",
+        "selectedIconPath": "image/icon-tab1-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "image/icon-tab2.png",
+        "selectedIconPath": "image/icon-tab2-active.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/partner/partner",
+        "iconPath": "image/icon-tab3.png",
+        "selectedIconPath": "image/icon-tab3-active.png",
+        "text": "伙伴"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "iconPath": "image/icon-tab4.png",
+        "selectedIconPath": "image/icon-tab4-active.png",
+        "text": "更多"
+      }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

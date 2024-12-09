@@ -1,0 +1,9 @@
+{
+    "username": "Username {name}",
+    "username1": "用户名 <bbb>{name1}</bbb>",
+    "password": "Password",
+    "rememberMe": "Remember Me",
+    "submit": "Submit",
+    "inputYourUsername": "Please input your username!",
+    "inputYourPassword": "Please input your password!"
+}

@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view>
+  <!-- <xrcom01
+    disable-scroll
+    id="main-frame"
+    width="{{renderWidth}}"
+    height="{{renderHeight}}"
+    style="width:{{width}}px;height:{{height}}px;"
+    bind:mikuPos="handleMikuPos"
+  ></xrcom01> -->
+
+
+  <xrcom02
+    disable-scroll
+    id="main-frame"
+    width="{{renderWidth}}"
+    height="{{renderHeight}}"
+    style="width:{{width}}px;height:{{height}}px;"
+    bind:mikuPos="handleMikuPos"
+  ></xrcom02>
+
+
+  <block>
+    <view style="display: block;position: absolute;left: {{pos[0]}}px;top:{{pos[1]}}px;background-color: #888;">
+      <view style="text-align: center; color: white; font-size: 24px; padding: 8px;">
+        初音未来
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,32 @@
+<!--pages/video/video.wxml-->
+
+<video
+  id="myVideo"
+  poster="{{video.poster}}"
+  src="{{video.src}}"
+  controls="{{controls}}"
+  show-progress="{{showprogress}}"
+  loop="{{loop}}"
+  autoplay="{{autoplay}}"
+  muted="{{muted}}"
+
+  danmu-list="{{video.danmuList}}"
+  danmu-btn
+  enable-danmu
+  bindtimeupdate="danmuTime"
+></video>
+
+<button style="margin-top: 10px;" type="primary"  bindtap="playVideo" >播放</button>
+<button style="margin-top: 10px;" type="primary"  bindtap="pauseVideo">暂停</button>
+<button style="margin-top: 10px;" type="primary"  bindtap="seekVideo">跳到120秒</button>
+<button style="margin-top: 10px;" type="primary"  bindtap="playRate">2倍数播放</button>
+<button style="margin-top: 10px;" type="primary"  bindtap="stopVideo">停止播放</button>
+
+<!-- 发送弹幕 -->
+<view style="margin-top: 10px;">
+  <form bindsubmit="sendDanmu">
+    <input type="text" name="danmu" placeholder="在此处输入弹幕内容"></input>
+    <button form-type="submit">发送弹幕</button>
+  </form> 
+</view>
+

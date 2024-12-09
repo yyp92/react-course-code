@@ -1,0 +1,34 @@
+<!--pages/quiz/quiz.wxml-->
+
+<view>{{quiz.title}}</view>
+<view>{{quiz.desc}}</view>
+
+<form bindsubmit="formSubmit">
+  <block wx:for-items="{{quiz.subjects}}" wx:for-index="idx" wx:for-item="subject" wx:key="item">
+    <view>{{idx+1}}、{{subject.subtitle}}</view>
+    <view>{{subject.subdesc}}</view>
+    
+    <block wx:if="{{subject.formtype == 'radio'}}">
+      <radio-group name="{{subject.id}}">
+        <block wx:for-items="{{subject.option}}" wx:for-index="subid" wx:for-item="option" wx:key="item">
+          <label>
+            <radio value="{{subid+1}}" />{{option}}</label>
+        </block>
+      </radio-group>
+    </block>
+
+    <block wx:if="{{subject.formtype == 'input'}}">
+      <input name="{{subject.id}}" placeholder="{{subject.option}}" />
+    </block>
+
+    <block wx:if="{{subject.formtype == 'checkbox'}}">
+      <checkbox-group name="{{subject.id}}">
+        <block wx:for-items="{{subject.option}}" wx:for-index="subid" wx:for-item="option" wx:key="item">
+          <label><checkbox value="{{subid}}" />{{option}}</label>
+        </block>
+      </checkbox-group>
+    </block>
+  </block>
+
+  <button form-type="submit">提交</button>
+</form>

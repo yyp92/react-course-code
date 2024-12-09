@@ -1,0 +1,121 @@
+<!--pages/index/index.wxml-->
+
+<!-- <view class="index-link">
+  <navigator url="/pages/functions/functions" class="item-link">functions</navigator>
+</view>
+
+<view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/rectangle/rectangle" class="item-link">rectangle</navigator>
+</view>
+
+<view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/invoke/invoke" class="item-link">invoke</navigator>
+</view>
+
+<view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/dbtest/dbtest" class="item-link">dbtest</navigator>
+</view>
+
+<view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/chinadata/chinadata" class="item-link">chinadata</navigator>
+</view>
+
+<view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/daily/daily" class="item-link">操作集合里的记录</navigator>
+</view>
+
+<view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/zhihudaily/zhihudaily" class="item-link">操作单个记录doc的字段值</navigator>
+</view>
+
+<view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/userHobby/userHobby" class="item-link">数组的查询更新操作符</navigator>
+</view>
+
+<view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/aggregate/aggregate" class="item-link">聚合阶段</navigator>
+</view>
+
+<view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/aggregate-operator/aggregate-operator" class="item-link">聚合操作符入门</navigator>
+</view>
+
+<view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/file/file" class="item-link">云存储与相册小程序</navigator>
+</view>
+
+<view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/cloudFile/cloudFile" class="item-link">云存储快速入门</navigator>
+</view> -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/folder/folder" class="item-link">创建个人相册</navigator>
+</view>
+ -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/user/user" class="item-link">用户信息</navigator>
+</view> -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/request/request" class="item-link">request</navigator>
+</view>
+
+<view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/apidata/apidata" class="item-link">apidata</navigator>
+</view> -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/blog/blog" class="item-link">博客</navigator>
+</view>
+ -->
+ 
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/form/form" class="item-link">表单</navigator>
+</view> -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/quiz/quiz" class="item-link">问卷小程序</navigator>
+</view> -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/music/music" class="item-link">音频与背景音乐</navigator>
+</view> -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/record/record" class="item-link">录音与播放</navigator>
+</view> -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/video/video" class="item-link">video 视频组件</navigator>
+</view> -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/canvas/canvas" class="item-link">Canvas制作海报</navigator>
+</view> -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/animate/animate" class="item-link">动画</navigator>
+</view> -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/chart/chart" class="item-link">动态数据可视化</navigator>
+</view> -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/image/image" class="item-link">云函数与Buffer</navigator>
+</view> -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/tcb-router/tcb-router" class="item-link">tcb-router</navigator>
+</view> -->
+
+<!-- <view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/snapshot/snapshot" class="item-link">实时数据推送</navigator>
+</view> -->
+
+<view class="index-link" style="margin-top: 15px;">
+  <navigator url="/pages/imgprocess/imgprocess" class="item-link">图像处理和OCR</navigator>
+</view>
+
+

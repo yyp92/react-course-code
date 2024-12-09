@@ -1,0 +1,16 @@
+/* pages/home/movies/movies.wxss */
+
+.title {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.weui-media-box__hd_in-appmsg{
+  height: auto;
+}
+
+.weui-grid{
+  width: 20%;
+}

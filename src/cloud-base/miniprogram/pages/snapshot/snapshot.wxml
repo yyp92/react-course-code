@@ -1,0 +1,3 @@
+<!--pages/snapshot/snapshot.wxml-->
+
+<button type="primary" bindtap="addStar">点赞{{stars}}</button>

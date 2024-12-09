@@ -1,0 +1,5 @@
+<!--pages/userHobby/userHobby.wxml-->
+
+<button bindtap="viewArray">数组查询操作符</button>
+
+<button style="margin-top: 15px;" bindtap="updateArray">数组的增删更新操作符</button>

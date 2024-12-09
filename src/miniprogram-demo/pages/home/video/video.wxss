@@ -1,0 +1,18 @@
+/* pages/home/video/video.wxss */
+
+.covertext {
+  width: 500rpx;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 20rpx;
+  left: 10rpx;
+}
+
+.coverimg {
+  width: 100rpx;
+  height: 23rpx;
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+}

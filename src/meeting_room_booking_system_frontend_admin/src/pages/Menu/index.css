@@ -1,0 +1,14 @@
+#menu-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#menu-container .menu-area {
+    width: 200px;
+    height: 100%;
+}
+
+#menu-container .menu-area .ant-menu {
+    height: 100%;
+}

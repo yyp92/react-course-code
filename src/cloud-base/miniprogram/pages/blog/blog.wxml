@@ -1,0 +1,24 @@
+<!--pages/blog/blog.wxml-->
+
+<block wx:for="{{blogData}}" wx:for-index="idx" wx:for-item="blog" wx:key="item" >
+  <view class="weui-panel__bd blog-item">
+    <navigator url="../content/content?id={{blog.id}}" class="weui-media-box weui-media-box_appmsg">
+      <view class="weui-media-box__hd">
+        <image class="weui-media-box__thumb" src="{{blog.image}}" alt></image>
+      </view>
+      <view class="weui-media-box__bd">
+        <h4 class="weui-media-box__title"> {{blog.title}}</h4>
+        <view class="weui-media-box__desc">{{blog.category[0].name}}</view>
+      </view>
+    </navigator>
+  </view>
+
+  <view class="weui-media-box__bd">
+    <h4 class="weui-media-box__title"> {{blog.title}}</h4>
+    <view class="weui-media-box__desc">{{blog.category[0].name}}  阅读量：{{blog.views}}</view>
+  </view>
+
+  <view  bindtap="addStar" data-id="{{blog.id}}" >点赞：{{blog.stars}}</view> 
+
+  <view  bindtap="addFavor" data-id="{{blog.id}}" >收藏：{{blog.favorites}}</view> 
+</block>

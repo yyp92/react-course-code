@@ -1,0 +1,31 @@
+<!--pages/home/imgshow/imgshow.wxml-->
+<view id="imgsection">
+  <view class="title">小程序显示图片</view>
+
+  <view class="imglist">
+    <!-- <image class="imgicon" src="/image/icon-tab1.png"></image> -->
+
+    <!-- widthFix模式：宽度不变，高度自动变化，保持原图宽高比不变。 -->
+    <image
+      class="imgicon"
+      mode="widthFix"
+      src="https://636c-cloud1-3gkiq8bd984d28e0-1319673306.tcb.qcloud.la/miniprogram-demo/weapp.jpg?sign=09d0a37bbf6ac0e5d1741f6eabac85a5&t=1690358597"
+    ></image>
+  </view>
+
+  <view class="imglist">
+    <image
+      class="imgfull"
+      mode="center"
+      src="https://tcb-1251009918.cos.ap-guangzhou.myqcloud.com/background.png"
+    ></image>
+  </view>
+
+  <view class="imglist">
+    <image
+      class="circle"
+      mode="widthFix"
+      src="https://hackwork.oss-cn-shanghai.aliyuncs.com/lesson/weapp/4/logo.jpg"
+    ></image>
+  </view>
+</view>

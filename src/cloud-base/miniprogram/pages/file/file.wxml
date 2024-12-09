@@ -1,0 +1,229 @@
+<!--pages/file/file.wxml-->
+
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">单张图片</text>
+
+  <button
+    wx:if="{{hasImg === false}}"
+    bindtap="chooseImg"
+  >选择图片</button>
+
+  <image
+    wx:if="{{hasImg === true}}"
+    style="margin-top: 8px;"
+    mode="widthFix"
+    src="{{imgurl}}"
+    data-src="{{item}} "
+    bindtap="previewImg"
+  />
+
+  <!-- <view
+    wx:if="{{imgurl}}"
+    style="margin-top: 10px;"
+  >
+    <button bindtap="previewImg">预览照片</button>
+  </view> -->
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">多张图片</text>
+
+  <button
+    wx:if="{{!imgurlList.length}}"
+    bindtap="chooseImgs"
+  >选择图片</button>
+
+  <view
+    wx:for-items="{{imgurlList}}"
+    wx:for-item="item"
+    wx:key="index"
+  >
+    <image
+      style="margin-top: 8px;"
+      mode="widthFix"
+      src="{{item}}"
+      data-src="{{item}} "
+      data-index="{{index}}"
+      bindtap="previewImgs"
+    />
+  </view>
+
+  <!-- <view
+    wx:if="{{imgurlList.length > 0}}"
+    style="margin-top: 10px;"
+  >
+    <button bindtap="previewImgs">预览照片</button>
+  </view> -->
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">保存图片</text>
+
+  <image
+    style="margin-top: 8px;"
+    mode="widthFix"
+    src="/images/1.jpg"
+    bindtap="handleSaveImg"
+  />
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">上传文件到小程序本地</text>
+
+  <button bindtap="chooseFile">选择文件</button>
+
+  <view
+    wx:for-items="{{tempFiles}}"
+    wx:for-item="item"
+    wx:key="*this"
+  >
+    <!-- <view>{{item.path}}</view> -->
+    <view>{{item.name}}</view>
+  </view>
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">上传地理位置</text>
+
+  <button bindtap="chooseLocation">选择地理位置</button>
+  <view>{{location.name}}</view>
+  <view>{{location.address}}</view>
+  <!-- <view>{{location.latitude}}</view>
+  <view>{{location.longitude}}</view> -->
+
+  <map
+    wx:if="{{location.latitude && location.longitude}}"
+    style="width: 100%; height: 300px;"
+    latitude="{{location.latitude}}"
+    longitude="{{location.longitude}}"
+    show-location
+  ></map>
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">下载文件</text>
+
+  <button bindtap="downloadFile">下载文件</button>
+  <image
+    wx:if="{{!!downloadFile}}"
+    style="margin-top: 10px;"
+    src="{{downloadFile}}"
+  ></image>
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">预览文档</text>
+
+  <button bindtap="openDoc">下载并打开文档</button>
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">保存文件与文件缓存</text>
+
+  <button bindtap = "downloadPDF">下载PDF</button>
+  <button style="margin-top: 10px;" bindtap= "openPDF1">打开PDF</button>
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">操作文件缓存</text>
+
+  <button bindtap = "getSavedFileList">获取已保存的缓存文件列表</button>
+  <button style="margin-top: 10px;" bindtap= "getSavedFileInfo">获取缓存文件的信息</button>
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">文件管理器</text>
+
+  <button bindtap = "getFileSystemManager">文件管理器与用户目录</button>
+  <button style="margin-top: 10px;" bindtap= "getFileSystemManager1">使用文件管理器写入并读取文件</button>
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">将图片存储到缓存里</text>
+
+  <view>临时文件的图片</view>
+  <image mode="widthFix" src="{{tempFilePath}}" style="width: 100px"></image>
+
+  <view>缓存保存的图片</view>
+  <image mode="widthFix" src="{{savedFilePath}}" style="width: 100px"></image>
+
+  <button  bindtap="chooseImage2">请选择文件</button>
+  <button style="margin-top: 10px;"  bindtap="saveImage">保存文件到缓存</button>
+</view>
+
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">将数据存储到缓存里</text>
+
+  <view wx:for="{{logs}}" wx:for-item="log">
+    <view>{{index + 1}}. {{log}}</view>
+  </view>
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">照片文件管理</text>
+
+  <!-- 从这里我们可以判断我们打开的到底是列表里的第几个相册/文件夹，因为数组是从0开始计数，所以+1 -->
+  <text>你打开的是第{{folderIndex + 1}}个文件夹</text>
+
+  <!-- 渲染数据指定id的文件夹内的文件列表到页面 -->
+  <block
+    wx:for="{{folderData.files}}"
+    wx:for-index="idx"
+    wx:for-item="file"
+    wx:key="item"
+  >
+    <view>
+      <mp-cell hover value="{{file.name}}">{{file.name}}</mp-cell>
+    </view>
+    
+  </block>
+</view>
+
+<view
+  style="border: 1px solid red; border-radius: 8px; padding: 6px; margin-top: 10px;"
+>
+  <text style="font-size: 18px; font-weight: 600;">上传单个文件到文件夹</text>
+
+  <form bindsubmit="uploadFiles"> 
+   <button type="primary" bindtap="handleChooseMessageFile">选择文件</button>
+   <button type="primary" style="margin-top: 10px;" formType="submit">上传文件</button>
+  </form>
+</view>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+<!--pages/image/image.wxml-->
+
+<button bindtap="getServerImg">点击渲染base64图片</button>
+<image width="400px" height="200px" src="data:image/jpeg;base64,{{img}}"></image>

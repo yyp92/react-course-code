@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "xrcom01":"../../components/xrcom01/xrcom",
+    "xrcom02":"../../components/xrcom02/xrcom"
+  },
+  "disableScroll": true
+}

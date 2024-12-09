@@ -1,0 +1,17 @@
+<!--pages/canvas/canvas.wxml-->
+
+<!-- <view
+  class="books"
+  id="book001"
+  data-book="book001"
+  hover-class="red"
+  style="background:#fadc4a;color:#fff;margin:20px;padding:20px"
+>
+  <view class="title">小程序云开发入门与实战</view>
+  <view class="author">李东bbsky</view>
+  <view class="desc">零基础也能快速上手学会小程序的云开发</view>
+</view> -->
+
+<canvas type="2d" id="myCanvas"></canvas>
+
+<button style="margin-top: 10px;" type="primary" bindtap="saveCanvas">保存图片</button>

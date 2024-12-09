@@ -1,0 +1,24 @@
+/* pages/animate/animate.wxss */
+
+.box {
+  width: 150px;
+  height: 150px;
+}
+
+.bg-color {
+	background-color: green;
+}
+
+.bg-color-hover {
+	background-color: yellow;
+	transition: background-color 1s ease-out 3s;
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+	
+.fadeIn {
+	animation: 4s linear 0s infinite alternate fadeIn;
+}

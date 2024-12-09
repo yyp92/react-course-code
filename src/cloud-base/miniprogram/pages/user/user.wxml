@@ -1,0 +1,57 @@
+<!--pages/user/user.wxml-->
+
+<!-- open-type=”getUserInfo”的组件的event对象的detail里就有userInfo： -->
+<!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" lang="zh_CN">点击获取用户信息</button>
+
+<image src="{{avatarUrl}}"></image>
+<view>{{city}}</view>
+<view>{{nickName}}</view> -->
+
+
+
+<!-- 获取表单数据 -->
+<form bindsubmit="formSubmit">
+  <view>姓名</view>
+  <input name="name" placeholder="请输入你的姓名" />
+
+  <view>您的个人简介：</view>
+  <textarea name="desc" placeholder="请简短介绍一下你自己" auto-height auto-focus />
+
+  <view>联系方式</view>
+  <input name="email" placeholder="请输入你的邮箱" />
+
+  <view>婚姻状况</view>
+  <radio-group name="marriage">
+    <label><radio value="1" />单身</label>
+    <label><radio value="2" />未婚</label>
+    <label><radio value="3" />已婚</label>
+  </radio-group>
+
+  <picker name="birth" mode="date" start="1970-01-01" end="2005-01-01" bindchange="birthChange" >
+    <view>你的生日：{{userData.birth}}</view>
+  </picker>
+
+  <picker name="region" mode="region" bindchange="regionChange" value="{{userData.region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      当前选择：{{userData.region[0]}}，{{userData.region[1]}}，{{userData.region[2]}}
+    </view>
+  </picker>
+
+  <view>训练营学习进度</view>
+  <slider name="process" show-value></slider>
+  
+  <view>请勾选你喜欢的话题：</view>
+  <checkbox-group name="talks">
+    <label><checkbox value="talk1"/>前端</label>
+    <label><checkbox value="talk2"/>后端</label>
+    <label><checkbox value="talk3"/>开发工具</label>
+    <label><checkbox value="talk4"/>小程序</label>
+    <label><checkbox value="talk5"/>iOS</label>
+    <label><checkbox value="talk6"/>安卓</label>
+  </checkbox-group>
+
+  <view>是否接受新消息通知：</view>
+  <switch name="message"/>
+
+  <button form-type="submit">提交</button>
+</form>

@@ -1,0 +1,16 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+
+page {
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.item-link {
+  /* margin: 20px; */
+  box-sizing: border-box;
+  padding: 10px 15px;
+  background-color: #4ea6ec;
+  color: #fff;
+  border-radius: 4px;
+}

@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@cloudbase/extension-ci-wxmp": "^0.1.2",
+    "echarts": "^5.4.3",
+    "echarts-for-weixin": "^1.0.2",
+    "validator": "^13.11.0",
+    "weui-miniprogram": "^1.2.7"
+  }
+}

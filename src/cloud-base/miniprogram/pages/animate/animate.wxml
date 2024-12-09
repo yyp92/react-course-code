@@ -1,0 +1,23 @@
+<!--pages/animate/animate.wxml-->
+
+<view class="transition-display">
+	<!-- <view class="box bg-color" hover-class="bg-color-hover"></view> -->
+
+  <view
+    class="box bg-color {{animation}}"
+    bindtransitionend="transitionEnd"
+    bindanimationstart="animationStart"
+    bindanimationiteration="animationIteration"
+    bindanimationen = "animationend"
+  ></view>
+</view>
+
+<button style="margin-top: 12px;" type="primary" bindtap="addAnimation">触发动画</button>
+
+<view style="margin-top: 20px;">
+  <view id="img001">
+    <image mode="widthFix" src="https://hackwork-1251009918.cos.ap-shanghai.myqcloud.com/handbook/html5/weapp.jpg" ></image>
+  </view>
+  
+  <button style="margin-top: 12px;" type="primary" bindtap="animateImg">动画动起来</button>
+</view>

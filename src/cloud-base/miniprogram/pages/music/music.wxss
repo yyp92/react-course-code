@@ -1,0 +1,5 @@
+/* pages/music/music.wxss */
+
+.button {
+  margin-top: 10px;
+}

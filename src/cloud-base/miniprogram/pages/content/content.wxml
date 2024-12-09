@@ -1,0 +1,5 @@
+<!--pages/content/content.wxml-->
+
+<!-- 在content.wxml里输入以下代码，由于小程序并不支持知乎日报数据里的富文本包含一些字符，所以渲染的效果并不好，可以结合正则进行处理一下，在数据验证章节会有介绍 -->
+{{contentData.title}}
+<rich-text nodes="{{contentData.content}}"></rich-text>
