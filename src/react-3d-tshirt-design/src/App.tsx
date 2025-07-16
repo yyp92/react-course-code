@@ -63,7 +63,6 @@ const Tshirt = forwardRef<TshirtRef>((props, ref) => {
         if (mesh) {
             const loader = new THREE.TextureLoader()
             loader.load(src, (newTexture) => {
-                console.log('=====mesh', mesh, src)
                 newTexture.colorSpace = SRGBColorSpace;
                 texture = newTexture;
                 (mesh.material as THREE.MeshBasicMaterial).map = newTexture
